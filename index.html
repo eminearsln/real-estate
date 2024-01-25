@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="ımg/logoo.jpg" alt="logo" style="width: 70px" />
+        </a>
+        <button
+          class="navbar-toggler fs-6 py-2 PX-3 fw-bolder"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#popular">Popular</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#review">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#question">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn text-white bg-dark px-3 rounded-2"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--hero-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./ımg/home6.jpeg" class="d-block w-100-height" alt="..." />
+          <div class="carousel-caption carousel1">
+            <p>1/3</p>
+            <h5>DİSCOVER MORE EASİLY</h5>
+            <div class="mt-5 d-flex">
+              <input
+                type="text"
+                class="form-control search w-50 py-2"
+                placeholder="Search..."
+              />
+              <button
+                class="btn btn-light btn-sm justify-content-md-end mx-2 px-3"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="ımg/home7.jpeg" class="d-block w-100-height" alt="img7" />
+          <div class="carousel-caption carousel1">
+            <p>2/3</p>
+            <h5>FOR FUTURE GENERATİONS</h5>
+            <p><a href="#" class="btn btn-light btn-lg mt-3">More</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="ımg/home8.jpeg" class="d-block w-100-height" alt="..." />
+          <div class="carousel-caption carousel1">
+            <p>3/3</p>
+            <h5>REAL ESTATE BUYİNG AND SELLİNG GUİDE</h5>
+            <p><a href="#" class="btn btn-light btn-lg mt-3">More</a></p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--popular-->
+    <section class="container" id="popular" style="margin-top: 100px">
+      <p class="pt-5">Popular</p>
+      <div class="d-flex">
+        <h2>Popular Bungalows</h2>
+        <h6 class="ms-auto">
+          Discover All <span class="arrow-icon fs-3 fw-bolder">&rarr;</span>
+        </h6>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="./ımg/home1.jpeg"
+              alt="img1"
+              class="card-img-top rounded-0"
+              style="height: 200px; object-fit: cover"
+            />
+            <div class="card-body mt-2">
+              <p class="card-text">Sakarya, Turkey</p>
+              <div class="d-flex justify-content-center mt-3">
+                <p class="mx-4 text-muted">
+                  <i class="bi bi-car-front-fill"></i> bed
+                </p>
+                <p class="mx-4 text-muted">
+                  <i class="bi bi-play-fill"></i> 8*8
+                </p>
+                <p class="mx-4 text-muted">
+                  <i class="bi bi-compass"></i> 2000 m2
+                </p>
+              </div>
+              <div class="d-flex my-2">
+                <button class="btn btn-lg bg-dark text-white px-4">
+                  Book Now
+                </button>
+                <h5 class="my-auto ms-auto">$2.500</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="./ımg/home2.jpeg"
+              alt="img1"
+              class="card-img-top rounded-0"
+              style="height: 200px; object-fit: cover"
+            />
+            <div class="card-body mt-2">
+              <p class="card-text">Sakarya, Turkey</p>
+              <div class="d-flex justify-content-center mt-3">
+                <p class="mx-4 text-muted">
+                  <i class="bi bi-car-front-fill"></i> bed
+                </p>
+                <p class="mx-4 text-muted">
+                  <i class="bi bi-play-fill"></i> 9*6
+                </p>
+                <p class="mx-4 text-muted">
+                  <i class="bi bi-compass"></i> 1890 m2
+                </p>
+              </div>
+              <div class="d-flex my-2">
+                <button class="btn btn-lg bg-dark text-white px-4">
+                  Book Now
+                </button>
+                <h5 class="my-auto ms-auto">$1.750</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="./ımg/home3.jpeg"
+              alt="img1"
+              class="card-img-top rounded-0"
+              style="height: 200px; object-fit: cover"
+            />
+            <div class="card-body mt-2">
+              <p class="card-text">Sakarya, Turkey</p>
+              <div class="d-flex justify-content-center mt-3">
+                <p class="mx-4 text-muted">
+                  <i class="bi bi-car-front-fill"></i> bed
+                </p>
+                <p class="mx-4 text-muted">
+                  <i class="bi bi-play-fill"></i> 5*9
+                </p>
+                <p class="mx-4 text-muted">
+                  <i class="bi bi-compass"></i> 2350 m2
+                </p>
+              </div>
+              <div class="d-flex my-2">
+                <button class="btn btn-lg bg-dark text-white px-4">
+                  Book Now
+                </button>
+                <h5 class="my-auto ms-auto">$3.500</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--dark-->
+    <section class="bg-dark" style="margin-top: -150px">
+      <div class="container pt-5">
+        <div class="row" style="margin-top: 22%">
+          <div class="col-lg-4">
+            <h2 style="color: #b5b5b5">Henry Cavill</h2>
+            <p style="color: #b5b5b5">Fowder Salod</p>
+          </div>
+          <div class="col-lg-8">
+            <h6 style="color: #b5b5b5" class="lh-lg">
+              &ldquo; Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Sequi maxime dicta tempora similique maiores itaque animi
+              repellendus aspernatur. Autem maxime, eligendi recusandae cumque
+              commodi sapiente inventore adipisci earum possimus eos nemo
+              architecto facere rerum debitis, consectetur porro maiores ullam?
+              Dolorem consequatur commodi, necessitatibus ipsa inventore hic,
+              cupiditate esse vero nam omnis, incidunt odit voluptatem fugit
+              quae? Architecto, laboriosam. Reiciendis, ducimus! &ldquo;
+            </h6>
+          </div>
+        </div>
+        <hr class="text-light" />
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <img src="/ımg/logo1.png" alt="" class="w-75" />
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <img src="/ımg/logo2.png" alt="" class="w-75" />
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <img src="/ımg/logo3.png" alt="" class="w-75" />
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <img src="/ımg/logo4.png" alt="" class="w-75" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--services section-->
+    <section
+      class="about section-padding"
+      id="services"
+      style="margin-top: 40px"
+    >
+      <div class="text-center pb-5">
+        <h2>Services</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-12">
+            <div class="d-flex gap-2">
+              <div class="about-img">
+                <img
+                  src="/ımg/about2.jpeg"
+                  alt=""
+                  class="img-fluid h-100 mt-4"
+                  style="width: 550px; object-fit: cover"
+                />
+              </div>
+              <div class="about-img">
+                <img
+                  src="/ımg/about.jpeg"
+                  alt=""
+                  class="img-fluid h-75"
+                  style="width: 300px; object-fit: cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-12 ps-lg-5" style="margin-top: 40px">
+            <div class="about-text">
+              <h2>Comfort İs Our Priority</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
+                libero itaque ipsam debitis. Qui explicabo amet molestias
+                reiciendis, dignissimos doloremque nesciunt odio quia aliquam
+                harum excepturi ipsum veritatis, sapiente suscipit dolorum ipsam
+                quas tenetur. Iure inventore voluptates excepturi consequatur
+                voluptatum? Facere alias, nulla odit eaque odio ad qui animi
+                molestiae repudiandae! Aliquam id laboriosam, explicabo
+                consectetur hic earum odit consequuntur et natus, dignissimos
+                temporibus nam sunt rerum animi amet. Aliquam nesciunt ab
+                provident vero ratione et. Ab iusto dignissimos perferendis
+                repudiandae dolor animi mollitia porro est, sunt eum excepturi,
+                vitae veritatis accusamus natus minus eveniet voluptates
+                consequuntur error in cum!
+              </p>
+              <button class="btn btn-dark btn-md">More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--blog section-->
+    <section class="container" id="blog" style="margin-top: 100px">
+      <p class="pt-5">Blog</p>
+      <div class="d-flex">
+        <h2>Current Housing İnformation</h2>
+        <button class="btn btn-dark px-4 btn-md ms-auto">See All</button>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="/ımg/home-2.jpeg"
+              alt=""
+              style="width: 350px; height: 250px; object-fit: cover"
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">27 Jun 2024</p>
+              <p class="card-text text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem eius voluptatum illum aliquam autem iste iure, nulla
+                odio debitis magnam.....
+              </p>
+              <button
+                class="btn text-primary px-4 btn-md fs-6"
+                style="background: #d4e9ff"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="/ımg/home-3.jpeg"
+              alt=""
+              style="width: 350px; height: 250px; object-fit: cover"
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">1 August 2024</p>
+              <p class="card-text text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem eius voluptatum illum aliquam autem iste iure, nulla
+                odio debitis magnam.....
+              </p>
+              <button
+                class="btn text-primary px-4 btn-md fs-6"
+                style="background: #d4e9ff"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 rounded-0">
+            <img
+              src="/ımg/home4.jpeg"
+              alt=""
+              style="width: 350px; height: 250px; object-fit: cover"
+            />
+            <div class="card-body">
+              <p class="card-text text-muted">1 July 2024</p>
+              <p class="card-text text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatem eius voluptatum illum aliquam autem iste iure, nulla
+                odio debitis magnam.....
+              </p>
+              <button
+                class="btn text-primary px-4 btn-md fs-6"
+                style="background: #d4e9ff"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--review-->
+    <section class="bg-dark" id="review" style="margin-top: 100px">
+      <div class="container pt-5">
+        <div class="d-flex">
+          <h2 class="text-light">What Customers Say About Us ?</h2>
+          <div class="ms-auto">
+            <button class="btn btn-md text-light">
+              <span class="arrow-icon mx-2">&larr;</span>
+            </button>
+            <button class="btn btn-md text-light">
+              <span class="arrow-icon mx-2">&rarr;</span>
+            </button>
+          </div>
+        </div>
+        <div class="mx-auoto row row-cols-md-2 row-cols-lg-3 g-4 pb-5">
+          <div class="card border-0 bg-transparent col-md-8">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/ımg/team-1.png" alt="" class="img-fluid" />
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title text-white">Thomas</h5>
+                  <p class="card-text text-light">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Delectus illo corporis earum vero nostrum quidem iste
+                    assumenda asperiores quisquam architecto.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-light">Lead Engineer </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 bg-transparent col-md-8">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/ımg/team-2.png" alt="" class="img-fluid" />
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title text-white">Justin</h5>
+                  <p class="card-text text-light">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Delectus illo corporis earum vero nostrum quidem iste
+                    assumenda asperiores quisquam architecto.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-light">Lead Engineer </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 bg-transparent col-md-8">
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/ımg/team-3.png" alt="" class="img-fluid" />
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <h5 class="card-title text-white">Brad</h5>
+                  <p class="card-text text-light">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Delectus illo corporis earum vero nostrum quidem iste
+                    assumenda asperiores quisquam architecto.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-light">Lead Engineer </small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--question-->
+    <section
+      class="about section-padding"
+      id="question"
+      style="margin-top: 40px"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-12 mt-md-3">
+            <div class="about-text">
+              <p>Questions</p>
+              <h2>Frequently Asked Question</h2>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Numquam doloribus laborum ducimus, obcaecati quo soluta atque
+                odio illum asperiores voluptas iste nihil eius sapiente
+                molestiae aliquid dolore temporibus ex rerum qui! Accusantium
+                quo deserunt, fuga iste necessitatibus iusto nam esse!
+              </p>
+              <a href="#" class="btn text-white bg-dark px-3">For More</a>
+            </div>
+          </div>
+          <!--accordion-->
+          <div class="accordion col-lg-7 mt-5" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Why should you choose us?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Where is our location?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  How many people can our bungalows accommodate?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <footer class="bg-dark" style="margin-top: 80px;" >
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <h5 class="text-light">About Us</h5>
+            <p class="text-light">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+              nemo id quia cum? Voluptate, modi?
+            </p>
+            <p class="text-light"><i class="bi bi-crosshair2"> Sakarya</i></p>
+            <p class="text-light"><i class="bi bi-telephone-fill"></i> +444 444 444</i></p>
+            <p class="text-light"><i class="bi bi-envelope"></i> info@gmail.com</i></p>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="text-light">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="" class="text-light text-decoration-none">Home</a></li>
+              <li><a href="popular" class="text-light text-decoration-none">Popular</a></li>
+              <li><a href="services" class="text-light text-decoration-none">Services</a></li>
+              <li><a href="blog" class="text-light text-decoration-none">Blog</a></li>
+              <li><a href="" class="text-light text-decoration-none">Contact</a></li>
+
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="text-light">For Communication Us</h5>
+            <ul class="list-unstyled">
+              <li class="text-light text-decoration-none"><a href="" ><i class="bi bi-facebook text-light"></i></a>     Facebook</li>
+              <li class="text-light text-decoration-none"><a href="" ><i class="bi bi-twitter text-light"></i></a>     Twitter</li>
+              <li class="text-light text-decoration-none"><a href="" ><i class="bi bi-instagram text-light"></i></a>     İnstagram</li>
+              <li class="text-light text-decoration-none"><a href="" ><i class="bi bi-linkedin text-light"></i></a>     Linkedin</li>              
+            </ul>
+          </div>          
+        </div>
+        <hr/>
+        <div class="row">
+         <div class="col-lg-12">
+          <p class="text-center text-light">Copyright © 2023 <a href="" class="text-secondary text-decoration-none">  Real Estate  </a> All Right Reserved</p>
+         </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
